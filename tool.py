@@ -11,13 +11,13 @@ def main():
     selected_command = ""
 
     while selected_command != "Q":
-        print("\n")
+        print()
         selected_command = input("Your command > ")
 
         if selected_command == "S":
             for usr in User.select():
                 print(f"Name: {usr.user} Age: {usr.age}")
-                
+
         elif selected_command == "A":
             user_name = input("New user name > ")
             user_age = input("New user age > ")
